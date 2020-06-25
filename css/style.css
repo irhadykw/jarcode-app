@@ -1,0 +1,39 @@
+.app-logo {
+  font-size: 1.9rem;
+}
+.judul-materi i {
+  font-size: 1rem;
+}
+.border-image {
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.img-align {
+    margin: 0 auto;
+}
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  .margin-top {
+    margin-top: 20px;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    /* -webkit-font-feature-settings: 'liga'; */
+    -webkit-font-smoothing: antialiased;
+  }

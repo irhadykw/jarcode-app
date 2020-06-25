@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Coding</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./icon.png" />
+    <link rel="manifest" href="./manifest.json">
+
+</head>
+<body>
+   <header>
+        <nav class="blue accent-3" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="app-logo">Belajar Coding</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="slide-out"></ul>
+            </div>
+        </nav>    
+   </header> 
+   <main>
+        <div class="container" id="body-content">
+
+        </div>
+   </main>
+   <script src="./js/materialize.min.js"></script>
+   <script src="./js/nav.js"></script>
+
+   <!-- Registrasi Service Worker -->
+   <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(function() {
+            console.log("Pendaftaran ServiceWorker berhasil");
+          })
+          .catch(function() {
+            console.log("Pendaftaran ServiceWorker gagal");
+          });
+      });
+    } else {
+      console.log("ServiceWorker belum didukung browser ini.");
+    }
+  </script>
+</body>
+</html>
